@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 * {
 	background-color: #2b2e3b;
@@ -8,23 +10,29 @@
 
 .header-top {
 	text-align: center;
-	font-family: "Roboto", sans-serif;
+	font-family: 'KoHo', sans-serif;
 }
 
 .about_header {
 	font-family: 'Roboto', sans-serif;
-}
-
-.notice1 {
-	font-family: 'open sans', sans-serif;
+	text-align: left;
+	padding-left: 100px;
 }
 
 .about {
 	padding-left: 30px;
 	font-family: 'Open Sans', sans-serif;
+	text-align: left;
 }
 
 .copyright {
 	padding-left: 30px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.slogan {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 40px;
+	padding-left: 50px;
+	margin: 0px;
 }
