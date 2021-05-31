@@ -4,6 +4,7 @@
 		<title>Derp Studios™️</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="icon" href="images/derp-logo.jpg" type="image/x-icon">
+		<link rel="stylesheet" href="css/w3.css">
 	</head>
 	<body>
 		<header>
@@ -12,6 +13,12 @@
 			</div>
 		</header>
 		<div class=slogan>
+			<img class = "w3-right" src="images/blue-derp-logo.jpg" alt="LOL YOU CANT SEE HAH" style="
+					width:441px;
+					height:457px;
+					bottom: 100px;
+					right: 50px;
+			"/>
 			<p>
 				Fri<b><em>end</em></b>
 				<br>Best fri<b><em>end</em></b>
@@ -21,13 +28,6 @@
 				<br>
 				<em><b>Only DERP has no end.</b></em> -Lord Mijail
 			</p>
-				<img src="images/blue-derp-logo.jpg" alt="LOL YOU CANT SEE HAH" style="
-					width:500px;
-					height:500px;
-					position: absolute;
-					bottom: 100px;
-					right: 50px;
-				"/>  			
 		</div>
 		<br>
 		<div class="quote">
@@ -35,18 +35,77 @@
 				<br>-King Fred XXI, who also made this epic website</p>
 		</div>
 		<br>
-		<div id="about" class="about">
-			<div class='about_header'>
-				<h2>Do you need more convincing?</h2>
+		<div class="w3-container" style="padding:128px 16px" id="characters">
+			<div class="characters-header">
+				<h3 class="w3-center">OUR characters</h3>
+				<p class="w3-center w3-large">Pixel art by Lord Mijail</p>
 			</div>
-			<img src="images/blue-derp-logo.jpg" alt="derp logo" style="width:150px; height:150px;"/>
-			<p>Derp studios epic
-			<br> - Bagaracena</p>
+			<div class="w3-row-padding" style="margin-top:64px">
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/cringer_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cringer">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/derf_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Derf">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/derpius_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Derpius">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/fred_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fred">
+				</div>
+			</div>
+			<div class="w3-row-padding w3-section">
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/gefry_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gefry">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/jace_the_duck_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jace the Duck">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/joey_nutty_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Joey Nutty">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/mijail_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mijail">
+				</div>
+			</div>
+
+				<div class="w3-row-padding w3-section">
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/pez_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pez">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/tofu_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tofu">
+				</div>
+				<div class="w3-col l3 m6">
+					<img src="images/sprite cult/yuri_sprite.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yuri">
+				</div>
+			</div>
+		</div>
+		<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+			<span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+				<img id="img01" class="w3-image">
+				<p id="caption" class="w3-opacity w3-large"></p>
+			</div>
 		</div>
 		<footr>
+			<div id="about" class="about">
+				<img src="images/blue-derp-logo.jpg" alt="derp logo" style="width:150px; height:150px;"/>
+				<p>Derp studios epic
+				<br> - Bagaracena</p>
+			</div>
 			<div class="copyright">
 				<p>© 12023 Derp Studios</p>
 			</div>
 		</footr>
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
+			}
+			</script>
 	</body>
 </html>

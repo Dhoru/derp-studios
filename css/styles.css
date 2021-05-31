@@ -33,6 +33,7 @@ body {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	font-size: 30px;
+	margin-top: 75px;
 }
 
 .copyright {
@@ -45,4 +46,8 @@ body {
 	font-size: 40px;
 	padding-left: 50px;
 	margin: 0px;
+}
+
+.characters-header {
+	font-family: 'Roboto', sans-serif;
 }
